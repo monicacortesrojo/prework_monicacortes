@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Syne', sans-serif;
+    color: #35080a;
+}
+
+body {
+    background: #fff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #dd9b9710, #fff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #dd9b9710, #fff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contenedor {
+    padding: 100px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header {
+    width: 100%;
+    height: 500px;
+    background-color: #9c0407;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav>a {
+    color: #fff;
+    font-weight: 300px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 25px;
+}
+
+nav>a:hover {
+    font-weight: bolder;
+}
+
+header .textos-header {
+    display: flex;
+    height: 330px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1 {
+    color: #fff;
+    font-size: 60px;
+}
+
+.textos-header h2 {
+    color: rgba(255, 255, 255, 0.801);
+}
+
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 70px 70px;
+}
+
+.img-party {
+    width: 300px;
+}
+
+.sobre-nosotros .contenido-textos {
+    width: 48%;
+}
+
+.contenido-textos h3 {
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span {
+    background: #35080a;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin-left: 60px;
+    margin-right: 15px;
+}
+
+.contenido-textos p {
+    padding: 0px 0px 30px 30px;
+    font-weight: 15px;
+    text-align: justify;
+    margin-left: 60px;
+}
+
+.portfolio {
+    background-color: #dd9b970c;
+}
+
+.galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.image-port {
+    width: 33%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    height: 300px;
+}
+
+.image-port>img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    top: 0;
+    transform: scale(0);
+    background: rgba(241, 241, 241, 0.664);
+    transition: transform .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img {
+    width: 50px;
+    opacity: 50%;
+}
+
+.hover-galeria p {
+    color: rgba(0, 0, 0, 0.507);
+}
+
+.image-port:hover .hover-galeria {
+    transform: scale(1);
+}
+
+.clientes-contenedor {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.clientes-contenedor .card {
+    background-color: rgba(0, 156, 0, 0.63);
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.clientes-contenedor .card img {
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+}
+
+.clientes-contenedor .card>.contenido-texto-card {
+    width: 60%;
+    color: rgb(235, 12, 12);
+}
+
+.about-services {
+    padding-bottom: 30px;
+}
+
+.servicio-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind {
+    width: 20%;
+    text-align: center;
+}
+
+.servicio-ind img {
+    width: 90%;
+}
+
+.servicio-ind img:hover {
+    width: 100%;
+    transition-duration: 1s;
+}
+
+.servicio-ind h3 {
+    margin-bottom: 30px;
+}
+
+footer {
+    padding: 260px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.content-foo {
+    text-align: center;
+    color: #e0625e;
+}
+
+.content-foo h4 {
+    color: #e0625e;
+    border-bottom: 1px solid #e0625e;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.content-foo a {
+    color: #e0625e;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: 1800px;
+    text-decoration: none;
+}
+
+.content-foo a:hover {
+    font-weight: bolder;
+}
+
+.formulario {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    background-color: #fff;
+    height: 400px;
+    margin: auto;
+    align-items: center;
+}
+
+.formulario h3 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #35080aa6;
+    font-size: 16px;
+}
+
+#boton {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #35080a;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 35px;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+
+input {
+    border: #fff;
+    background-color: #dd9b970c;
+    height: 40px;
+    width: 120%;
+}
+
+@media screen and (max-width:900px) {
+    header {
+        background-position: center;
+    }
+    .contenedor-sobre-nosotros {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosotros .contenido-textos {
+        width: 90%;
+    }
+    .img-party {
+        width: 70%;
+        min-width: 400px;
+        margin-bottom: 30px;
+    }
+    .image-port {
+        width: 44%;
+    }
+    .clientes-contenedor {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenido-texto-card {
+        width: 90%;
+    }
+    .contenido-texto-card:first-child {
+        margin-bottom: 500px;
+    }
+    .servicio-cont {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .servicio-ind {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .servicio-ind img {
+        width: 50%;
+    }
+    .formulario {
+        width: 80%;
+    }
+    .servicio-ind p {
+        width: 80%;
+        text-align: center;
+    }
+}
